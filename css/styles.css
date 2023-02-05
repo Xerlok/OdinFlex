@@ -136,7 +136,7 @@ h2 {
 }
 
 .images img:hover {
-    box-shadow: 1px  1px 15px goldenrod;
+    box-shadow: 2px  2px 15px #1F2937;
 }
 
 .image-palette {
