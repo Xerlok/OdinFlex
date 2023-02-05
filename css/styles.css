@@ -89,6 +89,14 @@ ul {
     border-radius: 0.5rem;
 }
 
+#contact span { cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
+  
+#contact span:after { content: '\00bb'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;}
+  
+#contact:hover span {padding-right: 15px;}
+  
+#contact:hover span:after { opacity: 1;right: 0;}
+
 
 .main-top img{
     max-width: 30%;
@@ -118,6 +126,19 @@ h2 {
     border-style: solid;
     border-radius: 0.5rem;
     border-color: silver;
+    width: 11rem;
+    height: 16rem;
+}
+
+.image-palette {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.images .text {
+    text-align: center;
 }
 
 .quote {
@@ -126,35 +147,63 @@ h2 {
     align-items: center;
     flex-direction: column;
     flex: 1;
-    background-color: lightgray;
-    padding: 2rem;
+    background-color: #E5E7EB;
+    padding: 2rem 2rem 2rem 2rem;
     font-size: 2rem;
+    font-style: italic;
+}
+
+.quote .text {
+    border-style: solid none solid none;
+    border-width: 0.1rem;
 }
 
 #ad {
     display: flex;
     flex: 1 0 8rem;
-    background-color: #3882F6;
+    background-image: url("/img/bunker.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
     justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: start;
     margin: 5rem 30rem;
     border-radius: 0.5rem;
-    
-}
-
-
-.image-palette {
-    display: flex;
-    justify-content: center;
     gap: 1rem;
 }
 
-.images img {
-    width: 8rem;
-    height: 8rem;
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1.5rem;
 }
+
+.ad-text .h {
+    font-size: 6rem;
+}
+
+.ad-text {
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#ad-button {
+    color: white;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+button span { cursor: pointer;display: inline-block;position: relative;transition: 0.5s; }
+  
+button span:after { content: '\00bb';position: absolute;opacity: 0; top: 0; right: -20px; transition: 0.5s;}
+  
+button:hover span {padding-right: 15px;}
+  
+button:hover span:after {opacity: 1;right: 0;}
 
 .footer {
     display: flex;
