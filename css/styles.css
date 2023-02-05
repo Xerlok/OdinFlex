@@ -148,7 +148,7 @@ h2 {
     flex-direction: column;
     flex: 1;
     background-color: #E5E7EB;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 4rem 2rem;
     font-size: 2rem;
     font-style: italic;
 }
@@ -194,6 +194,7 @@ h2 {
     border-radius: 0.5rem;
     border: 2px solid white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: none;
 
 }
 
