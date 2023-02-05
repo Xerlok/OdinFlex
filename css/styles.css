@@ -135,6 +135,10 @@ h2 {
     height: 16rem;
 }
 
+.images img:hover {
+    box-shadow: 1px  1px 15px goldenrod;
+}
+
 .image-palette {
     display: flex;
     justify-content: center;
@@ -145,6 +149,7 @@ h2 {
 .images .text {
     text-align: center;
 }
+
 
 .quote {
     display: flex;
@@ -193,6 +198,10 @@ h2 {
 
 .ad-text {
     text-shadow: 2px 2px 2px #000000;
+}
+
+.ad-text.m {
+    font-size: 0.8rem;
 }
 
 #ad-button {
